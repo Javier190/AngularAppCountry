@@ -1,0 +1,13 @@
+<form (ngSubmit)="buscar()" autocomplete="off">
+  <input type="text" name="termino" placeholder="Buscar Pais.." 
+  [(ngModel)]="termino" class="form-control">
+
+</form>
+
+<!-- Sobre video 109
+Al apretar tecla enter, se va a ejecutar el metodo buscar de aqui. Y ese metodo (III)
+ busca emitir o enviar el termino string(pais). minirecordatorio el termino se recuperaba con ngModel. 
+ Luego se toma este valor de termino y se pasa al onEnter, el cual emite hacia el padre. 
+ Y CUANDO ocurra o "escuche" el OnEnter (porPaisHTML), se va a llamar el metodo buscar() en porPais y le entrego el evento, 
+ que es donde viene el evento tipo string 
+-->
